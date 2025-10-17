@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>169</x>
+      <y>117</y>
+      <w>273</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Usuario
+--
+- UserID: int
+- Username: String
+- Password: String
+- Tipo : TipoUsuario
+--
++ Login(): Bool
++ Logout(): Void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>533</x>
+      <y>117</y>
+      <w>273</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>Playlist
+--
+- PlaylistID: int
+- Nombre: string 
+- IDusuario: int
+--
++ AgregarCancion()
++ EliminarCancion()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>533</x>
+      <y>351</y>
+      <w>273</w>
+      <h>221</h>
+    </coordinates>
+    <panel_attributes>Cancion
+--
+- IDcancion: int
+- Artista: String
+- Album: String
+- Genero: String
+- RutaCancion: String
+- RutaPortada: String 
+--
++ Reproducir(): Void
++ Pausar(): Void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>169</x>
+      <y>312</y>
+      <w>260</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Tipos de usuario:
+A: Prioridad Alta
+B: Prioridad Media
+C: Prioridad baja (free tier)
+
+bg=Yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>143</y>
+      <w>130</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>260</y>
+      <w>39</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
